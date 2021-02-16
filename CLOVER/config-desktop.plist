@@ -183,7 +183,7 @@
 		<key>Debug</key>
 		<true/>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 slide=0</string>
+		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon alcid=29</string>
 		<key>XMPDetection</key>
 		<false/>
 		<key>Timeout</key>
@@ -429,9 +429,9 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>FirmwareFeatures</key>
-		<string>0xFD8FF576</string>
+		<string>0xFD8FF466</string>
 		<key>Board-ID</key>
-		<string>Mac-63001698E7A34814</string>
+		<string>Mac-7BA5B2DFE22DDD8C</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFFDFFF7F</string>
 		<key>BoardVersion</key>
@@ -441,33 +441,37 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>BiosVersion</key>
-		<string>IM191.88Z.F000.B00.1910301745</string>
+		<string>MM81.88Z.F000.B00.2007121438</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
+		<string>Mini-Aluminum</string>
 		<key>PlatformFeature</key>
-		<string>0x22</string>
+		<string>0x20</string>
 		<key>Family</key>
-		<string>iMac</string>
-		<key>BoardSerialNumber</key>
-		<string>C02901404J9KGQGUE</string>
+		<string>Mac mini</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C07036701CDKXPG8C</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>iMac19,2</string>
+		<string>Macmini8,1</string>
+		<key>SmUUID</key>
+		<string>81B220D0-9AF7-48BD-BF72-0CFAA6D2FAD7</string>
 		<key>Mobile</key>
-		<false/>
+		<true/>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>EfiVersion</key>
-		<string>1037.60.50.0.0</string>
+		<string>1539.0.0.0.1</string>
+		<key>SerialNumber</key>
+		<string>C07DC06FJYVX</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
-		<string>10/30/2019</string>
+		<string>07/12/2020</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

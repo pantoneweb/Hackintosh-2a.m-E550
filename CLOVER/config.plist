@@ -113,7 +113,7 @@
 					<key>Replace</key>
 					<data>SERFRg==</data>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 				</dict>
@@ -196,7 +196,7 @@
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -igfxnohdmi</string>
+		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon alcid=29</string>
 		<key>Timeout</key>
 		<integer>5</integer>
 	</dict>
@@ -369,20 +369,26 @@
 			<dict>
 				<key>## @2 HDMI</key>
 				<string></string>
-				<key>#framebuffer-con1-flags</key>
-				<data>hwEAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
 				<key>#2 framebuffer-con2-enable</key>
 				<integer>1</integer>
 				<key>## @0 LVDS-&gt;DP</key>
 				<string></string>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
 				<key># DVMT-prealloc</key>
 				<string>32MB BIOS, 19MB framebuffer, 9MB cursor bytes (credit RehabMan)</string>
 				<key>#framebuffer-con3-pipe</key>
 				<data>EgAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con0-type</key>
+				<data>AAQAAA==</data>
 				<key>## @3 HDMI</key>
 				<string></string>
-				<key>#framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
+				<key>framebuffer-con0-enable</key>
+				<integer>1</integer>
 				<key>#3 framebuffer-con1-alldata</key>
 				<data>/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA</data>
 				<key># Note1</key>
@@ -393,63 +399,46 @@
 				<data></data>
 				<key>#framebuffer-con3-flags</key>
 				<data>hwEAAA==</data>
+				<key>0105-&gt; 0204</key>
+				<string>0x3e9b0000, 0105 instead of 0204, HDMI</string>
 				<key>#3 no external</key>
 				<string>0x3e9b0000, eliminate all external ports (0105 and 0204)</string>
-				<key>#framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
 				<key>#hda-gfx</key>
 				<string>onboard-1</string>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
 				<key>#framebuffer-con3-type</key>
 				<data>AAgAAA==</data>
-				<key>#framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con0-enable</key>
-				<integer>1</integer>
 				<key>#2 framebuffer-con2-alldata</key>
 				<data>AwYIAAAEAADHAwAA</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con2-flags</key>
+				<data>hwEAAA==</data>
 				<key>## @1 HDMI</key>
 				<string></string>
-				<key>#framebuffer-con2-flags</key>
-				<data>hwEAAA==</data>
 				<key>#AAPL00,override-no-edid</key>
 				<data></data>
-				<key>#framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con0-type</key>
-				<data>AAQAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>#2 0204-&gt;0306</key>
-				<string>0x3e9b0000, 0306 instead of 0204, HDMI</string>
+				<key>framebuffer-con1-flags</key>
+				<data>hwEAAA==</data>
 				<key>#3 framebuffer-con1-enable</key>
 				<integer>1</integer>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
 				<key>#framebuffer-con3-enable</key>
 				<integer>1</integer>
-				<key>#framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>#framebuffer-con2-type</key>
+				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AACbPg==</data>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1f,3)</key>
-			<dict>
-				<key>#no-controller-patch</key>
-				<integer>1</integer>
-				<key>#layout-id</key>
-				<integer>3</integer>
-				<key>#hda-gfx</key>
-				<string>onboard-1</string>
-				<key>#PinConfigurations</key>
-				<data></data>
 			</dict>
 		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<string>No</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -548,11 +537,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>FirmwareFeatures</key>
-		<string>0xFDAFF066</string>
+		<string>0xFC0FE137</string>
 		<key>Board-ID</key>
-		<string>Mac-E7203C0F68AA0004</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFFFFFF7F</string>
+		<string>0xFF1FFF3F</string>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>Manufacturer</key>
@@ -560,7 +549,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>BiosVersion</key>
-		<string>MBP163.88Z.F000.B00.2007121457</string>
+		<string>MBP152.88Z.F000.B00.2007121439</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisAssetTag</key>
@@ -572,13 +561,13 @@
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02008401J90000JA</string>
+		<string>C02839101GUJH4R1F</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>MacBookPro16,3</string>
+		<string>MacBookPro15,2</string>
 		<key>SmUUID</key>
-		<string>2BEF2B4D-DC65-44FC-9E83-1B32F577B54E</string>
+		<string>B82DF1A9-D9E1-4DF3-918E-0C99B25B2C0C</string>
 		<key>Mobile</key>
 		<true/>
 		<key>BoardType</key>
@@ -586,7 +575,7 @@
 		<key>EfiVersion</key>
 		<string>1539.0.0.0.1</string>
 		<key>SerialNumber</key>
-		<string>C02C9RYNP3XY</string>
+		<string>C02XG8YYJHCC</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
