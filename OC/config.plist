@@ -117,7 +117,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BwCbPg==</data>
+				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key>enable-hdmi20</key>
@@ -133,7 +133,7 @@
 				<key>framebuffer-con0-pipe</key>
 				<data>CQAAAA==</data>
 				<key>framebuffer-con0-type</key>
-				<data>AAgAAA==</data>
+				<data>AgAAAA==</data>
 				<key>framebuffer-con1-busid</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
